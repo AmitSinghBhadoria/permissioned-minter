@@ -190,11 +190,11 @@ class App extends Component {
 			i++;
 		}
 		this.setState({ MintingRequestList });
-		let requests = []
+		// let requests = []
 		this.state.MintingRequestList.map(arrayElem => {
-			requests.push(arrayElem)
+			this.state.requests.push(arrayElem)
 		})
-		this.setState({requests})
+		// this.setState({requests})
 	};
 
 	render() {
